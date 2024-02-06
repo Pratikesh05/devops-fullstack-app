@@ -4,4 +4,4 @@ COPY package*.json ./
 RUN golang install
 COPY . .
 EXPOSE 3000
-CMD  ["gola", "start"]
+CMD  ["golang", "start"]
