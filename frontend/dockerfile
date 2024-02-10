@@ -1,7 +1,7 @@
-FROM: golang/1.17
+FROM: node/14.17.0
 WORKDIR:  /usr/src/app
 COPY: package*.json ./
-RUN: golang install
+RUN: npm install
 COPY: . .
 EXPOSE: 3000
-CMD: ["golang","start"]
+CMD: ["npm","start"]
